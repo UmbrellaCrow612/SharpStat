@@ -1,0 +1,25 @@
+name: Format C# Code
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+
+      - name: Install dotnet format tool
+        run: dotnet tool install -g dotnet-format
+
+      - name: Run dotnet format (check)
+        run: dotnet format --check --verbosity diag
