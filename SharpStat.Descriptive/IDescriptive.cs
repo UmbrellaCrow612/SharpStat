@@ -11,5 +11,10 @@
         /// <param name="numbers">A sequence of numeric values.</param>
         /// <returns>The calculated mean of the input values.</returns>
         double Mean(double[] numbers);
+
+        /// <summary>
+        /// Calculates median of a sorted collection.
+        /// </summary>
+        double MedianFromSorted(double[] sortedNumbers);
     }
 }

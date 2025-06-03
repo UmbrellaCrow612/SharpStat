@@ -73,5 +73,73 @@
 
 
         /// ====================== <see cref="Descriptive.Mean(double[])"/> Tests end =================================== 
+
+
+        /// ====================== <see cref="Descriptive.MedianFromSorted(double[])"/> Tests ===================================
+
+        [Fact]
+        public void Median_OddLengthArray_ReturnsMiddleElement()
+        {
+            // Arrange
+            double[] numbers = [1, 3, 5];
+
+            // Act
+            double result = _descriptive.MedianFromSorted(numbers);
+
+            // Assert
+            Assert.Equal(3, result);
+        }
+
+        [Fact]
+        public void Median_EvenLengthArray_ReturnsAverageOfMiddleTwo()
+        {
+            // Arrange
+            double[] numbers = [1, 3, 5, 7];
+
+            // Act
+            double result = _descriptive.MedianFromSorted(numbers);
+
+            // Assert
+            Assert.Equal(4, result);
+        }
+
+        [Fact]
+        public void Median_SingleElementArray_ReturnsThatElement()
+        {
+            // Arrange
+            double[] numbers = [42];
+
+            // Act
+            double result = _descriptive.MedianFromSorted(numbers);
+
+            // Assert
+            Assert.Equal(42, result);
+        }
+
+        [Fact]
+        public void Median_EmptyArray_ReturnsZero()
+        {
+            // Arrange
+            double[] numbers = [];
+
+            // Act
+            double result = _descriptive.MedianFromSorted(numbers);
+
+            // Assert
+            Assert.Equal(0, result);
+        }
+
+        [Fact]
+        public void Median_NullArray_ThrowsArgumentNullException()
+        {
+            // Arrange
+            double[] numbers = null!;
+
+            // Act & Assert
+            Assert.Throws<ArgumentNullException>(() => _descriptive.MedianFromSorted(numbers));
+        }
+
+
+        /// ====================== <see cref="Descriptive.MedianFromSorted(double[])"/> Tests End ===================================
     }
 }
