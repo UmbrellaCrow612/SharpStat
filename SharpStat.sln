@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpStat.Core", "SharpStat.Core\SharpStat.Core.csproj", "{DB0CE82E-619F-4A5D-8B8C-96F4992891E1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpStat.Descriptive", "SharpStat.Descriptive\SharpStat.Descriptive.csproj", "{9762E47D-EE45-42E3-85CB-79F07128D253}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpStat.Descriptive.Tests", "SharpStat.Descriptive.Tests\SharpStat.Descriptive.Tests.csproj", "{694E2C55-CBEE-4C79-A81B-1C77C9E12161}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DB0CE82E-619F-4A5D-8B8C-96F4992891E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB0CE82E-619F-4A5D-8B8C-96F4992891E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB0CE82E-619F-4A5D-8B8C-96F4992891E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB0CE82E-619F-4A5D-8B8C-96F4992891E1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9762E47D-EE45-42E3-85CB-79F07128D253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9762E47D-EE45-42E3-85CB-79F07128D253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9762E47D-EE45-42E3-85CB-79F07128D253}.Release|Any CPU.ActiveCfg = Release|Any CPU
